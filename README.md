@@ -38,13 +38,13 @@ Moving from surface features to contextual representation adds about 13.5 macro-
 
 ## Tech stack
 
-Python, PyTorch, HuggingFace Transformers, HuggingFace datasets, scikit-learn, nltk, NumPy, matplotlib, seaborn.
+Python, PyTorch, HuggingFace Transformers, HuggingFace datasets, scikit-learn, nltk, NumPy, matplotlib, seaborn, Google Colab Pro.
 
 ## Files
 
 * `financial-sentiment-analysis.ipynb` runs the full workflow: preprocessing, baselines, both transformer fine-tuning runs, evaluation, confusion matrices, and the manual error analysis.
 
-To reproduce the results, run the notebook in a GPU runtime (the transformers fine-tune on a single T4). The dataset loads automatically from HuggingFace.
+To reproduce the results, run the notebook in a GPU runtime. It was developed in Google Colab Pro, and the transformers fine-tune on a single T4 GPU. The dataset loads automatically from HuggingFace.
 
 ## Reproducibility
 
