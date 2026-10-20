@@ -13,7 +13,7 @@ This project tests whether a finance-specific transformer improves sentence-leve
 * **Target:** three-class sentiment, negative, neutral and positive.
 * **Class balance:** 61.4% neutral (1,391), 25.2% positive (570), 13.4% negative (303), so accuracy is misleading and macro-F1 is the primary metric.
 
-The dataset is not stored in this repository. It loads automatically through the `datasets` library when the notebook runs, so no manual download is needed.
+The dataset is not stored in this repository. It loads automatically through the `datasets` library when the notebook runs, and no manual download is needed. Financial PhraseBank is distributed under the CC BY-NC-SA 3.0 licence; the MIT licence in this repository covers the code only.
 
 ## Approach
 
@@ -50,7 +50,7 @@ Python, PyTorch, HuggingFace Transformers, HuggingFace datasets, scikit-learn, n
 
 * `financial-sentiment-analysis.ipynb` runs the full workflow: preprocessing, baselines, both transformer fine-tuning runs, evaluation, confusion matrices, and the manual error analysis.
 
-The notebook was developed in Google Colab Pro on a single T4 GPU and mounts Google Drive for outputs. The recorded run used Python 3.12, PyTorch 2.10, Transformers 5.0.0, Datasets 3.6.0, scikit-learn 1.6.1 and NLTK 3.9.1. The dataset loads through a Hugging Face loading script, which Datasets 4.0 and later no longer support.
+The notebook was developed in Google Colab Pro on a single T4 GPU and mounts Google Drive for outputs. The fine-tuned model weights (about 780 MB) are not included in this repository. The recorded run used Python 3.12, PyTorch 2.10, Transformers 5.0.0, Datasets 3.6.0, scikit-learn 1.6.1 and NLTK 3.9.1. The dataset loads through a Hugging Face loading script, which Datasets 4.0 and later no longer support.
 
 ## Reproducibility
 
